@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter | JAVASCRIPT</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        background-image: url(bg.png)!important;
+        margin-top: 70px;
+        color: #000;
+        background-repeat: repeat;
+        background-position: center;    
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="display-4 text-center mb-3">Weight Converter</h1>
+                <form>
+                    <div class="form-group">
+                        <input id="lbsInput" type="number" class="form-control form-control-lg"
+                            placeholder="Enter Kilograms...">
+                    </div>
+                </form>
+                <div id="output">
+
+                    <div class="card-group">
+                        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                            <div class="card-header">
+                                <h3>Grams</h3>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" id="gop"></h5>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                            <div class="card-header">
+                                <h3>Pounds</h3>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" id="pounds"></h5>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                            <div class="card-header">
+                                <h3>Ounces</h3>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" id="oop"></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+                <br />
+
+                <!--  Salary Calculator -->
+                <h1 class="display-4 text-center mb-3">Salary Increases</h1>
+              
+              
+                <form onsubmit="weightConvert(event)">
+                    <div class="form-row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="New Salary" id="new">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Old Salary" id="old">
+                      </div>
+                      <div class="col">
+                        <button type="submit" class="btn btn-dark" style="width:100%;">Calculate</button>
+                      </div>
+                      <div class="col">
+                        <input id="result2" value="" type="text" class="form-control" readonly>
+                      </div>
+                    </div>
+                  </form>
+
+
+
+
+                <br />
+                <form onsubmit="weightConvert(event)">
+                    <div class="form-row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Percentage(%)" id="perc">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Total" id="amt">
+                      </div>
+                      <div class="col">
+                        <button type="submit" class="btn btn-success" style="width:100%;">Calculate</button>
+                      </div>
+                      <div class="col">
+                        <input id="result" value="" type="text" class="form-control" readonly>
+                      </div>
+                    </div>
+                  </form>
+
+                <br />
+
+              
+            
+            </div>
+           
+
+
+
+            <!-- increment %-->
+           
+            
+        </div>
+    </div>
+    
+</body>
+
+</html>
